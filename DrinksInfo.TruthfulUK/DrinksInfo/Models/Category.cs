@@ -4,7 +4,7 @@ namespace DrinksInfo.Models;
 internal class Category
 {
     [JsonPropertyName("strCategory")]
-    public string CategoryName { get; set; }
+    public string? CategoryName { get; set; }
 
     public override string ToString()
     {

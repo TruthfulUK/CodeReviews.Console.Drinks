@@ -1,12 +1,16 @@
-﻿namespace DrinksInfo.Models;
+﻿using System.Text.Json.Serialization;
+
+namespace DrinksInfo.Models;
 internal class FilteredCategoryDrinks
 {
-    public string strDrink { get; set; }
-    public string idDrink { get; set; }
+    [JsonPropertyName("strDrink")]
+    public string Drink { get; set; }
+    [JsonPropertyName("idDrink")]
+    public string Id { get; set; }
 
     public override string ToString()
     {
-        return strDrink;
+        return Drink;
     }
 
 }
