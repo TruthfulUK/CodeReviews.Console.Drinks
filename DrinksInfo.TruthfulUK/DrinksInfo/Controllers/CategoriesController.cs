@@ -16,6 +16,6 @@ internal class CategoriesController
         string endpoint = "list.php?c=list";
         var response = await _client.GetAsync<CategoryResponse>(endpoint);
 
-        return response?.categories ?? new List<Category>();          
+        return response?.Categories ?? new List<Category>();          
     }
 }

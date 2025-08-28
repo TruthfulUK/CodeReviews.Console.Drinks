@@ -16,5 +16,6 @@ internal class FilteredCategoryDrinks
 }
 internal class FilteredCategoryDrinksResponse
 {
-    public List<FilteredCategoryDrinks> drinks { get; set; }
+    [JsonPropertyName("drinks")]
+    public List<FilteredCategoryDrinks> Drinks { get; set; }
 }

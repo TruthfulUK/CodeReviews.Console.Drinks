@@ -15,5 +15,5 @@ internal class Category
 internal class CategoryResponse
 {
     [JsonPropertyName("drinks")]
-    public List<Category> categories { get; set; }
+    public List<Category> Categories { get; set; }
 }

@@ -12,12 +12,10 @@ internal class DrinksController
     }
     public async Task<List<FilteredCategoryDrinks>> GetDrinksByCategory(string category)
     {
-        List<FilteredCategoryDrinks> filters = new List<FilteredCategoryDrinks>();
-
         string endpoint = $"filter.php?c={category}";
         var response = await _client.GetAsync<FilteredCategoryDrinksResponse>(endpoint);
 
-        return response?.drinks ?? new List<FilteredCategoryDrinks>();
+        return response?.Drinks ?? new List<FilteredCategoryDrinks>();
     }
 
     public async Task<Drink> GetDrinkById(string id)
