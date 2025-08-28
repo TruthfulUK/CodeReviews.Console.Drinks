@@ -1,6 +1,5 @@
 ﻿using DrinksInfo.Models;
 using DrinksInfo.Services;
-using System.ComponentModel;
 
 namespace DrinksInfo.Controllers;
 internal class CategoriesController
